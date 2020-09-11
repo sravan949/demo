@@ -8,6 +8,6 @@ export class DemoService {
   constructor(private http: HttpClient) {}
 
   getData() {
-    return this.http.get('https://reqres.in/api/users?page=2');
+    return this.http.get('http://reqres.in/api/users?page=2');
   }
 }

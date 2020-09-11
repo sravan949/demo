@@ -16,6 +16,9 @@ export class SampleInterceptor implements HttpInterceptor {
     next: HttpHandler
   ): Observable<HttpEvent<unknown>> {
     console.log('Sample Interceptor', request.url);
-    return next.handle(request);
+    const httpsRequest = request.clone({
+      url: request.url.replace('http://', 'https://'),
+    });
+    return next.handle(httpsRequest);
   }
 }
