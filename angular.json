@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng-inteceptor-demo"
+    }
+  },
+  "defaultProject": "ng-inteceptor-demo",
+  "cli": {
+    "analytics": "09ce597d-9174-41c7-a301-e5b1fd32ef90"
+  }
 }
